@@ -5,6 +5,9 @@ artists = [
     {"name": "Lainey Wilson", "streams": 5400000, "is_trending": True}
 ]
 
-for artist in artists:
-    if artist["is_trending"] == True:
-        print(artist["name"] + " is trending!")
+def get_trending(artists):
+    for artist in artists:
+        if artist["is_trending"] == True:
+            print(artist["name"] + " is trending!")
+
+get_trending(artists)
