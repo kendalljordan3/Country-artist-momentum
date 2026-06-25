@@ -1,4 +1,10 @@
-artists = ["Megan Moroney", "Zach Bryan", "Morgan Wallen", "Lainey Wilson"]
+artists = [
+    {"name": "Megan Moroney", "streams": 2030000, "is_trending": True},
+    {"name": "Zach Bryan", "streams": 8500000, "is_trending": True},
+    {"name": "Morgan Wallen", "streams": 12000000, "is_trending": False},
+    {"name": "Lainey Wilson", "streams": 5400000, "is_trending": True}
+]
 
 for artist in artists:
-    print(artist)
+    if artist["is_trending"] == True:
+        print(artist["name"] + " is trending!")
